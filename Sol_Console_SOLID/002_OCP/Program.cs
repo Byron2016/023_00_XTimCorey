@@ -11,8 +11,8 @@ namespace _002_OCP
             List<PersonModel> applicants = new List<PersonModel>
             {
                 new PersonModel{ FirstName = "Tim", LastName = "Corey" },
-                new PersonModel{ FirstName = "Sue", LastName = "Store", TypeOfEmployee = EmployeeType.Manager },
-                new PersonModel{ FirstName = "Nancy", LastName = "Roman", TypeOfEmployee = EmployeeType.Executive }
+                new PersonModel{ FirstName = "Sue", LastName = "Store" },
+                new PersonModel{ FirstName = "Nancy", LastName = "Roman" }
             };
 
             List<EmployeeModel> employees = new List<EmployeeModel>();
