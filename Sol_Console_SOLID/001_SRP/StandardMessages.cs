@@ -17,5 +17,10 @@ namespace _001_SRP
         {
             Console.ReadLine();
         }
+
+        public static void DisplayValidationError(string fielName)
+        {
+            Console.WriteLine($"No ha proporcionado un {fielName} válido!");
+        }
     }
 }
