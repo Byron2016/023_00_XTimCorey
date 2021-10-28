@@ -15,6 +15,7 @@ namespace _001_SRP
 
         public static void EndApplication()
         {
+            Console.WriteLine("Presione enter para cerrar...");
             Console.ReadLine();
         }
 
