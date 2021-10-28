@@ -6,20 +6,22 @@ namespace _001_SRP
     {
         static void Main(string[] args)
         {
+            //Ahora Main tiene una sola razón y es controlar el
+            //flujo de la aplicacion.
+
             StandardMessages.WelcomeMessage();
 
             Person user = PersonDataCapture.Capture();
 
             bool isUserValid = PersonValidator.Validate(user);
 
-            if (isUserValid)
+            if (isUserValid == false)
             {
                 StandardMessages.EndApplication();
                 return;
             }
 
-            // Crear un nombre de usuario para la persona.
-            Console.WriteLine($"Su nombre de usuario es {user.FirstName.Substring(0,1) }{ user.LastName }");
+            AccountGenerator.CreateAccount(user);
             StandardMessages.EndApplication();
         }
     }
